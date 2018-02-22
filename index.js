@@ -1,6 +1,11 @@
 function produceDrivingRange(blockRange) {
   return function(startBlock, endBlock) {
 
+    // I pass in a number of travel blocks (blockRange) allowed, then I compare the difference of end - start and create my conditions based on that.
+
+    // If diff is > 0 then its within range but if the diff is less than 0, a negative number (distanceToTravel > blockRange) then it is out of range. 
+
+
     let start = parseInt(startBlock)
     let end = parseInt(endBlock)
     let distanceToTravel = Math.abs(end - start)
